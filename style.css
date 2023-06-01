@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    width: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    background: url(/Photos/HD-Weather-Image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card h1{
+    color: white;
+    font-family: monospace;
+    place-self: center;
+    text-align: center;
+}
+
+.main-card{
+    width: 90%;
+    max-width: 25rem;
+    background: linear-gradient(90deg, #00face, #5b5a8a);
+    color: #fff;
+    margin-top: .625rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2.5rem 2.1875rem;
+    text-align: center;
+}
+
+.error{
+    display: none;
+    font-size: 1.5rem;
+    color: red;
+    float: left;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-card input{
+    border: 0;
+    outline: 0;
+    background: #ebfffe;
+    color: #555;
+    padding: .625rem 1.5625rem;
+    height: 3.75rem;
+    border-radius: 1.25rem;
+    flex: 1;
+    font-size: 1.125rem;
+    margin-right: 1rem;
+}
+
+.input-card button{
+    width: 4rem;
+    height: 3rem;
+    background: #ebfffc;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input-card button img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.weather img{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+.temp-cont img{
+    width: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+.temp-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.weather h1{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.weather h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-col{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    margin-top: .625rem;
+}
+
+.col1, .col2{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.col1 img, .col2 img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.ptag{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.weather{
+    display: block;
+}
+
+.humid-cont, .wind-cont{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.weather{
+    display: none;
+}
+
+@media (max-width: 29.0625rem)  {
+    .input-card input{
+        border: 0;
+        outline: 0;
+        background: #ebfffe;
+        color: #555;
+        padding: .625rem 1.5625rem;
+        height: 3.75rem;
+        width: 14rem;
+        border-radius: 1.25rem;
+        flex: 1;
+        font-size: 1.125rem;
+        margin-right: 1rem;
+    }
+    
+    .input-card button{
+        width: 3rem;
+        height: 2rem;
+        background: transparent;
+        border-radius: 50%;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+    
+    .input-card button img{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dareal's Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <h1>Dareal's Global Weather App</h1>
+        <section class="main-card">
+            <p class="error">Incorrect City Name</p>
+            <div class="input-card">
+                <input type="text" placeholder="Enter City Name" spellcheck="false">
+                <button><img src="Photos/search.png"></button>
+            </div>
+
+
+
+            <div class="weather">
+                <img src="Photos/rain.png" class="weather-icon" id="weather-i">
+                <div class="temp-cont">
+                    <img src="Photos/temp.png">
+                    <h1 class="temp"></h1>
+                </div>
+                <h2 class="city">Lokoja, <strong class="country">Country</strong></h2>
+                <div class="main-col">
+                    <div class="col1">
+                        <img src="Photos/humidity.jpeg">
+                        <div class="humid-cont">
+                            <p class="humid">Humidity</p>
+                            <p class="ptag humid-val"></p>
+                    </div>
+                        </div>
+                    <div class="col2">
+                        <img src="Photos/wind.jpg">
+                        <div class="wind-cont">
+                            <p class="wind">Wind Speed</p>
+                            <p class="ptag wind-val"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
